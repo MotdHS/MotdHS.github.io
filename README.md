@@ -1,4 +1,4 @@
 # MotdHS.github.io
-MotdHS's website
+This is my website!
 
 https://motdhs.github.io

@@ -8,10 +8,21 @@
 		<script>
 			console.log("script loaded")
 			var valar
+			var incremer
+			var upric
 			valar = 0
+			incremer = 1
+			upric = 100
 			function clocker() {
-			    valar++
+			    valar += incremer
  			    document.getElementById("clockbut").innerHTML = "Bostor: " + valar
+			}
+			function upgrer() {
+				if(upric <= valar) {
+					console.log("suces")
+				} else {
+					console.error("no")
+				}
 			}
 		</script>
 	</head>
@@ -19,6 +30,7 @@
 		<p>- <a href="./index.html">Home</a> -</p>
         <div id="main">
 			<button id="clockbut" onclick="clocker()">Bostor: 0</button>
+			<button id="uppp" onclick="upgrer()">Upgrer: 100</button>
 		</div>
 	</body>
 </html>

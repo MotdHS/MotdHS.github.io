@@ -5,7 +5,15 @@
 		<link rel="icon" href="./image/MotdIcon.png">
 		<link rel="stylesheet" href="style.css">
 		<script src="page.js"></script>
-		<script src="clicker.js"></script>
+		<script>
+			console.log("script loaded")
+			var valar
+			valar = 0
+			function clocker() {
+			    valar++
+ 			    document.getElementById("clockbut").innerHTML = "Bostor: " + valar
+			}
+		</script>
 	</head>
 	<body>
 		<p>- <a href="./index.html">Home</a> -</p>

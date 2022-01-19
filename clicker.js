@@ -1,4 +1,6 @@
 console.log("script loaded")
 function clocker() {
-    document.getElementById("clockbut").innerHTML = "aaa"
+    var valar = 0
+    valar++
+    document.getElementById("clockbut").innerHTML = "Bostor: " + valar
 }

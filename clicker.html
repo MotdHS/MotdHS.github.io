@@ -13,13 +13,17 @@
 			valar = 0
 			incremer = 1
 			upric = 100
+			document.getElementById("incoun").innerHTML = "Current Incremental: " + incremer
 			function clocker() {
 			    valar += incremer
  			    document.getElementById("clockbut").innerHTML = "Bostor: " + valar
 			}
 			function upgrer() {
 				if(upric <= valar) {
-					console.log("suces")
+					valar -= upric
+					upric += 50
+					incremer++
+					document.getElementById("uppp").innerHTML = "Upgrer: " + upric
 				} else {
 					console.error("no")
 				}
@@ -31,6 +35,7 @@
         <div id="main">
 			<button id="clockbut" onclick="clocker()">Bostor: 0</button>
 			<button id="uppp" onclick="upgrer()">Upgrer: 100</button>
+			<p id="incoun">Current Incremental: </p>
 		</div>
 	</body>
 </html>

@@ -21,14 +21,10 @@
 			function upgrer() {
 				if(upric <= valar) {
 					valar -= upric
-					upric += 50
-					incremer++
+					upric = upric * 1.25
+					incremer = incremer * 1.3
 					document.getElementById("uppp").innerHTML = "Upgrer: " + upric
 					document.getElementById("clockbut").innerHTML = "Bostor: " + valar
-					document.getElementById("incoun").innerHTML = "Current Incremental: " + incremer
-				} else {
-					document.getElementById("incoun").innerHTML = "sorry no"
-					setTimeout(1000)
 					document.getElementById("incoun").innerHTML = "Current Incremental: " + incremer
 				}
 			}

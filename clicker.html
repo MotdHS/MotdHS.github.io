@@ -15,8 +15,8 @@
 			incrementByValue = 1
 			upgradeValue = 50
 			function clickButton() {
-				shownValue = Math.floor(currentValue*10)/10
 			    currentValue += incrementByValue
+				shownValue = Math.floor(currentValue*10)/10
 				document.getElementById("incrementValue").innerHTML = "Current Incremental: " + incrementByValue
  			    document.getElementById("counter").innerHTML = "Current Value: " + shownValue
 			}

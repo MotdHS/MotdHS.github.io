@@ -25,9 +25,9 @@
 					upgradeValue = upgradeValue * 1.5
 					upgradeValue = Math.floor(upgradeValue)
 					incrementByValue = incrementByValue * 1.3
-					incrementByValue = Math.floor(incrementByValue*10)/10
+					incrementByValue = Math.floor(incrementByValue*100)/100
 					document.getElementById("incrementValue").innerHTML = "Current Incremental: " + incrementByValue
-					document.getElementById("counter").innerHTML = "Current Value: " + Math.floor(currentValue)
+					document.getElementById("counter").innerHTML = "Current Value: " + (Math.floor(currentValue*10)/10)
 					document.getElementById("upgradeButton").innerHTML = "Upgrade (required: " + upgradeValue + ")"
 				}
 			}
@@ -36,8 +36,6 @@
 	<body>
 		<p>- <a href="./index.html">Home</a> -</p>
         <div id="main">
-			<progress id="prog" class="progress is-success is-large" value="currentValue" max="upgradeValue"></progress>
-
 			<p id="incrementValue">Current Incremental: 1</p>
 			<p id="counter">Current Value: 0</p>
 			<button class="button" id="incrementButton" onclick="clickButton()">Click to increment</button>

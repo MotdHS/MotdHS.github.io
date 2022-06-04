@@ -22,12 +22,13 @@
 			function upgradButton() {
 				if(upgradeValue <= currentValue) {
 					currentValue -= upgradeValue
+					shownValue = Math.floor(currentValue*10)/10
 					upgradeValue = upgradeValue * 1.5
 					upgradeValue = Math.floor(upgradeValue*10)/10
 					incrementByValue = incrementByValue * 1.6
 					incrementByValue = Math.floor(incrementByValue*100)/100
 					document.getElementById("incrementValue").innerHTML = "Current Incremental: " + incrementByValue
-					document.getElementById("counter").innerHTML = "Current Value: " + (Math.floor(currentValue*10)/10)
+					document.getElementById("counter").innerHTML = "Current Value: " + shownValue
 					document.getElementById("upgradeButton").innerHTML = "Upgrade (required: " + upgradeValue + ")"
 				}
 			}

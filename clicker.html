@@ -19,6 +19,11 @@
 				shownValue = Math.floor(currentValue*10)/10
 				document.getElementById("incrementValue").innerHTML = "Current Incremental: " + incrementByValue
  			    document.getElementById("counter").innerHTML = "Current Value: " + shownValue
+				if (currentValue >= upgradeValue) {
+					document.getElementById("upgradeButton").class = "button is-success"
+				} else {
+					document.getElementById("upgradeButton").class = "button is-danger"
+				}
 			}
 			function upgradButton() {
 				if(upgradeValue <= currentValue) {
@@ -31,6 +36,11 @@
 					document.getElementById("incrementValue").innerHTML = "Current Incremental: " + incrementByValue
 					document.getElementById("counter").innerHTML = "Current Value: " + shownValue
 					document.getElementById("upgradeButton").innerHTML = "Upgrade (required: " + upgradeValue + ")"
+					if (currentValue >= upgradeValue) {
+						document.getElementById("upgradeButton").class = "button is-success"
+					} else {
+						document.getElementById("upgradeButton").class = "button is-danger"
+					}
 				}
 			}
 		</script>
@@ -43,7 +53,7 @@
 			<p id="incrementValue">Current Incremental: 1</p>
 			<p id="counter">Current Value: 0</p>
 			<button class="button" id="incrementButton" onclick="clickButton()">Click to increment</button>
-			<button class="button" id="upgradeButton" onclick="upgradButton()">Upgrade (required: 50)</button>
+			<button class="button is-danger" id="upgradeButton" onclick="upgradButton()">Upgrade (required: 50)</button>
 		</div>
 	</body>
 </html>

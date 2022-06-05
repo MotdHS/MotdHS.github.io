@@ -20,9 +20,9 @@
 				document.getElementById("incrementValue").innerHTML = "Current Incremental: " + incrementByValue
  			    document.getElementById("counter").innerHTML = "Current Value: " + shownValue
 				if (currentValue >= upgradeValue) {
-					document.getElementById("upgradeButton").class = "button is-success"
+					document.getElementById("upgradeButton").innerHTML.class = "button is-success"
 				} else {
-					document.getElementById("upgradeButton").class = "button is-danger"
+					document.getElementById("upgradeButton").innerHTML.class = "button is-danger"
 				}
 			}
 			function upgradButton() {
@@ -37,9 +37,9 @@
 					document.getElementById("counter").innerHTML = "Current Value: " + shownValue
 					document.getElementById("upgradeButton").innerHTML = "Upgrade (required: " + upgradeValue + ")"
 					if (currentValue >= upgradeValue) {
-						document.getElementById("upgradeButton").class = "button is-success"
+						document.getElementById("upgradeButton").innerHTML.class = "button is-success"
 					} else {
-						document.getElementById("upgradeButton").class = "button is-danger"
+						document.getElementById("upgradeButton").innerHTML.class = "button is-danger"
 					}
 				}
 			}

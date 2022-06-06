@@ -19,8 +19,8 @@
 				shownValue = Math.floor(currentValue*10)/10
 				document.getElementById("incrementValue").innerHTML = "Current Incremental: " + incrementByValue
  			    document.getElementById("counter").innerHTML = "Current Value: " + shownValue
-				document.getElementById("upgradeProcess").value = toString(currentValue)
-			    document.getElementById("upgradeProcess").max = toString(upgradeValue)
+				document.getElementById("upgradeProgress").value = toString(currentValue)
+			    document.getElementById("upgradeProgress").max = toString(upgradeValue)
 				if (currentValue >= upgradeValue) {
 					document.getElementById("upgradeButton").className = "button is-success"
 					document.getElementById("upgradeProgress").className = "progress is-large is-success"
@@ -40,8 +40,8 @@
 					document.getElementById("incrementValue").innerHTML = "Current Incremental: " + incrementByValue
 					document.getElementById("counter").innerHTML = "Current Value: " + shownValue
 					document.getElementById("upgradeButton").innerHTML = "Upgrade (required: " + upgradeValue + ")"
-					document.getElementById("upgradeProcess").value = toString(currentValue)
-			  	    document.getElementById("upgradeProcess").max = toString(upgradeValue)
+					document.getElementById("upgradeProgress").value = toString(currentValue)
+			  	    document.getElementById("upgradeProgress").max = toString(upgradeValue)
 					if (currentValue >= upgradeValue) {
 						document.getElementById("upgradeButton").className = "button is-success"
 						document.getElementById("upgradeProgress").className = "progress is-large is-success"
